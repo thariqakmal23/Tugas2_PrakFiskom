@@ -1,42 +1,17 @@
-import pandas as pd
-import numpy as np
+# SOAL
 
-# Bagian 1: Membuat DataFrame pertama
-last_names = ['Connor', 'Connor', 'Reese']
-first_names = ['Sarah', 'John', 'Kyle']
-df = pd.DataFrame({
-  'first_name': first_names,
-  'last_name': last_names,
-})
+Sebuah benda jatuh bebas dari ketinggian \(20 \ \text{m}\). Jika percepatan gravitasi bumi adalah \(10 \ \text{m/s}^2\), maka waktu yang diperlukan oleh benda sampai ke tanah adalah?
 
-# Bagian 2: Membaca data dari URL
-url = "https://github.com/luminati-io/Instagram-dataset-samples/raw/main/Instagram%20Profiles%20-%20Github%20Hashtag.xlsx"
-database = pd.read_excel(url)
+**Diketahui:**
+\[ h = 20 \ \text{m} \]
+\[ g = 10 \ \text{m/s}^2 \]
 
-# Bagian 3: Menampilkan informasi tentang DataFrame kedua
-print("Columns:")
-print(database.columns)
+**Ditanya:**
+\[ t = ? \]
 
-print("\nDescription:")
-print(database.describe())
-
-print("\nFirst 5 rows:")
-print(database.head())
-
-print("\nLast 5 rows:")
-print(database.tail())
-
-# Bagian 4: Membuat DataFrame kedua dengan kolom x, y, dan z
-x = [i for i in range(0, 10)]
-y = np.sin(x)
-
-dataframe = pd.DataFrame({
-    'x': x,
-    'y': y
-})
-
-dataframe['z'] = np.cos(x)
-
-# Bagian 5: Menampilkan DataFrame kedua
-print("\nDataFrame kedua:")
-print(dataframe)
+**Penyelesaian:**
+\[ h = \frac{1}{2} g t^2 \]
+\[ 20 \ \text{m} = \frac{1}{2} \times 10 \ \text{m/s}^2 \times t^2 \]
+\[ t^2 = \frac{20}{5} \ \text{s}^2 \]
+\[ t^2 = \sqrt{4} \]
+\[ t = 2 \ \text{s} \]
